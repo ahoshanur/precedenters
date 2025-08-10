@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TerraLex Member Database</title>
+  <title>Precedenters Member Database</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
@@ -130,8 +130,8 @@
 <body>
 
   <header>
-    <h1>Member Database</h1>
-    <p>Terralex 9 (Law and Land Administration)</p>
+    <h1>Precedenters Database</h1>
+    <p>Law and Land Administration</p>
     <input type="text" id="search" placeholder="🔍 search names">
   </header>
 
@@ -139,7 +139,7 @@
 
   <script>
     async function loadCSV() {
-      const res = await fetch("https://terralex.vercel.app/people.csv");
+      const res = await fetch("https://precedenters.vercel.app/people.csv");
       const csv = await res.text();
       const data = Papa.parse(csv, { header: true }).data;
 
